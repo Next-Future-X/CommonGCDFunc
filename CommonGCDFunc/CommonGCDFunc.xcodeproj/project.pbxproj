@@ -15,6 +15,8 @@
 		F6BF073E207A30E900BBD5E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BF073D207A30E900BBD5E6 /* main.m */; };
 		F6BF0748207A30EA00BBD5E6 /* CommonGCDFuncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BF0747207A30EA00BBD5E6 /* CommonGCDFuncTests.m */; };
 		F6BF0753207A30EA00BBD5E6 /* CommonGCDFuncUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BF0752207A30EA00BBD5E6 /* CommonGCDFuncUITests.m */; };
+		F6BF0763207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BF0762207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m */; };
+		F6BF0765207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BF0764207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		F6BF074E207A30EA00BBD5E6 /* CommonGCDFuncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonGCDFuncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BF0752207A30EA00BBD5E6 /* CommonGCDFuncUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonGCDFuncUITests.m; sourceTree = "<group>"; };
 		F6BF0754207A30EA00BBD5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BF0761207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncAndAsyncFuncVC.h; sourceTree = "<group>"; };
+		F6BF0762207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncAndAsyncFuncVC.m; sourceTree = "<group>"; };
+		F6BF0764207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SyncAndAsyncFuncVC.storyboard; sourceTree = "<group>"; };
+		F6BF0766207B71CE00BBD5E6 /* 总结.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "总结.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		F6BF072D207A30E900BBD5E6 /* CommonGCDFunc */ = {
 			isa = PBXGroup;
 			children = (
+				F6BF0760207B0E9F00BBD5E6 /* Functions */,
 				F6BF072E207A30E900BBD5E6 /* AppDelegate.h */,
 				F6BF072F207A30E900BBD5E6 /* AppDelegate.m */,
 				F6BF0731207A30E900BBD5E6 /* ViewController.h */,
@@ -130,6 +137,17 @@
 				F6BF0754207A30EA00BBD5E6 /* Info.plist */,
 			);
 			path = CommonGCDFuncUITests;
+			sourceTree = "<group>";
+		};
+		F6BF0760207B0E9F00BBD5E6 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF0766207B71CE00BBD5E6 /* 总结.h */,
+				F6BF0761207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.h */,
+				F6BF0762207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m */,
+				F6BF0764207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard */,
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +259,7 @@
 				F6BF073B207A30E900BBD5E6 /* LaunchScreen.storyboard in Resources */,
 				F6BF0738207A30E900BBD5E6 /* Assets.xcassets in Resources */,
 				F6BF0736207A30E900BBD5E6 /* Main.storyboard in Resources */,
+				F6BF0765207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +286,7 @@
 			files = (
 				F6BF0733207A30E900BBD5E6 /* ViewController.m in Sources */,
 				F6BF073E207A30E900BBD5E6 /* main.m in Sources */,
+				F6BF0763207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m in Sources */,
 				F6BF0730207A30E900BBD5E6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

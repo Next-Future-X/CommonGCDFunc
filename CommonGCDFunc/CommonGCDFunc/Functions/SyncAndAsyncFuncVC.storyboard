@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sync And Async FuncVC-->
+        <scene sceneID="svd-uW-RMD">
+            <objects>
+                <viewController storyboardIdentifier="SyncAndAsyncFuncVC" id="p4i-68-6eK" customClass="SyncAndAsyncFuncVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0tq-Gt-JIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" id="F2f-eM-6bv">
+                                <rect key="frame" x="67" y="320" width="240" height="262"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="66a-7H-kZe">
+                                <rect key="frame" x="16" y="125" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="主队列串行">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainQueueSyncFunc:" destination="p4i-68-6eK" eventType="touchUpInside" id="mDn-TE-FqJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hHT-us-laf">
+                                <rect key="frame" x="297" y="125" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="异步串行">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="asyncSerial:" destination="p4i-68-6eK" eventType="touchUpInside" id="dR5-52-5Zu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G8M-fD-cQQ">
+                                <rect key="frame" x="16" y="182" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="全局队列同步">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="globalQueueSync:" destination="p4i-68-6eK" eventType="touchUpInside" id="pBb-9j-4Sy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Lb-Ve-pGF">
+                                <rect key="frame" x="201" y="125" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="主队列异步">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainQueueAsync:" destination="p4i-68-6eK" eventType="touchUpInside" id="oRh-n2-6Ec"/>
+                                    <action selector="mainQueueConcurrent:" destination="p4i-68-6eK" eventType="touchUpInside" id="oLN-rA-bCc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YZF-lK-xyu">
+                                <rect key="frame" x="297" y="182" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="异步并发">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="asyncConcurrent:" destination="p4i-68-6eK" eventType="touchUpInside" id="BDZ-m8-etg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0yc-ia-WRq">
+                                <rect key="frame" x="118" y="182" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="同步并发">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="syncConcurrent:" destination="p4i-68-6eK" eventType="touchUpInside" id="WJE-5j-fbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iah-hr-Cte">
+                                <rect key="frame" x="193" y="182" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="全局队列异步">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="globalQueueAsync:" destination="p4i-68-6eK" eventType="touchUpInside" id="9rE-9s-dPj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f10-NW-UZ1">
+                                <rect key="frame" x="118" y="125" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.06210549537" green="0.49594138770000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="同步串行">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="syncSerial:" destination="p4i-68-6eK" eventType="touchUpInside" id="m8B-qQ-Xwr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="F2f-eM-6bv" id="mdp-xD-iFz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDZ-xf-okT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108.5" y="193.5"/>
+        </scene>
+    </scenes>
+</document>
