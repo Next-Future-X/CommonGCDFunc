@@ -17,6 +17,10 @@
 		F6BF0753207A30EA00BBD5E6 /* CommonGCDFuncUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BF0752207A30EA00BBD5E6 /* CommonGCDFuncUITests.m */; };
 		F6BF0763207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BF0762207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m */; };
 		F6BF0765207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BF0764207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard */; };
+		F6D82CF9207C9B2D00458419 /* DispatchGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D82CF7207C9B2D00458419 /* DispatchGroupVC.m */; };
+		F6D82CFA207C9B2D00458419 /* DispatchGroupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6D82CF8207C9B2D00458419 /* DispatchGroupVC.xib */; };
+		F6D82CFE207CBB2F00458419 /* DispatchBarrierVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D82CFC207CBB2F00458419 /* DispatchBarrierVC.m */; };
+		F6D82CFF207CBB2F00458419 /* DispatchBarrierVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6D82CFD207CBB2F00458419 /* DispatchBarrierVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,12 @@
 		F6BF0762207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncAndAsyncFuncVC.m; sourceTree = "<group>"; };
 		F6BF0764207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SyncAndAsyncFuncVC.storyboard; sourceTree = "<group>"; };
 		F6BF0766207B71CE00BBD5E6 /* 总结.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "总结.h"; sourceTree = "<group>"; };
+		F6D82CF6207C9B2D00458419 /* DispatchGroupVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupVC.h; sourceTree = "<group>"; };
+		F6D82CF7207C9B2D00458419 /* DispatchGroupVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupVC.m; sourceTree = "<group>"; };
+		F6D82CF8207C9B2D00458419 /* DispatchGroupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DispatchGroupVC.xib; sourceTree = "<group>"; };
+		F6D82CFB207CBB2F00458419 /* DispatchBarrierVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierVC.h; sourceTree = "<group>"; };
+		F6D82CFC207CBB2F00458419 /* DispatchBarrierVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierVC.m; sourceTree = "<group>"; };
+		F6D82CFD207CBB2F00458419 /* DispatchBarrierVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DispatchBarrierVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +156,12 @@
 				F6BF0761207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.h */,
 				F6BF0762207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m */,
 				F6BF0764207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard */,
+				F6D82CF6207C9B2D00458419 /* DispatchGroupVC.h */,
+				F6D82CF7207C9B2D00458419 /* DispatchGroupVC.m */,
+				F6D82CF8207C9B2D00458419 /* DispatchGroupVC.xib */,
+				F6D82CFB207CBB2F00458419 /* DispatchBarrierVC.h */,
+				F6D82CFC207CBB2F00458419 /* DispatchBarrierVC.m */,
+				F6D82CFD207CBB2F00458419 /* DispatchBarrierVC.xib */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -256,7 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D82CFF207CBB2F00458419 /* DispatchBarrierVC.xib in Resources */,
 				F6BF073B207A30E900BBD5E6 /* LaunchScreen.storyboard in Resources */,
+				F6D82CFA207C9B2D00458419 /* DispatchGroupVC.xib in Resources */,
 				F6BF0738207A30E900BBD5E6 /* Assets.xcassets in Resources */,
 				F6BF0736207A30E900BBD5E6 /* Main.storyboard in Resources */,
 				F6BF0765207B0F0B00BBD5E6 /* SyncAndAsyncFuncVC.storyboard in Resources */,
@@ -286,7 +304,9 @@
 			files = (
 				F6BF0733207A30E900BBD5E6 /* ViewController.m in Sources */,
 				F6BF073E207A30E900BBD5E6 /* main.m in Sources */,
+				F6D82CF9207C9B2D00458419 /* DispatchGroupVC.m in Sources */,
 				F6BF0763207B0EF700BBD5E6 /* SyncAndAsyncFuncVC.m in Sources */,
+				F6D82CFE207CBB2F00458419 /* DispatchBarrierVC.m in Sources */,
 				F6BF0730207A30E900BBD5E6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

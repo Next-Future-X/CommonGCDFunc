@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "SyncAndAsyncFuncVC.h"
+#import "DispatchGroupVC.h"
+#import "DispatchBarrierVC.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -60,7 +62,18 @@
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
-            
+        case 1:
+        {
+            DispatchGroupVC * vc = [[DispatchGroupVC alloc] initWithNibName:@"DispatchGroupVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 2:
+        {
+            DispatchBarrierVC * vc = [[DispatchBarrierVC alloc] initWithNibName:@"DispatchBarrierVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
         default:
             break;
     }
